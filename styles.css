@@ -1,12 +1,37 @@
 
 :root {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 *,
 *::before,
 *::after {
+    margin: 0;
     box-sizing: border-box;
+}
+
+@media only screen and (max-width: 546px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 6;}
+  .item3 {grid-area: 3 / span 6;}
+  .item4 {grid-area: 4 / span 6;}
+  .item5 {grid-area: 5 / span 6;}
+}
+
+@media only screen and (min-width: 667px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 3 / span 6;}
+  .item5 {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 1024px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 2 / span 1;}
+  .item5 {grid-area: 3 / span 6;}
 }
 
 body {
@@ -15,4 +40,21 @@ body {
     background-color: #0a976d;
     color: #262626;
     padding-bottom: 3rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.subscribe-button {
+  background-color: #bb5c04;
+  border-radius: 10;
+  color: white;
+  padding: 12 12;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
 }
