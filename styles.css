@@ -1,0 +1,18 @@
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #0a976d;
+    color: #262626;
+    padding-bottom: 3rem;
+}
